@@ -1,0 +1,10 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        unique = []
+        for i in nums:
+            if i not in unique:
+                unique.append(i)
+            elif i in unique:
+                return True
+        return False 
+                
